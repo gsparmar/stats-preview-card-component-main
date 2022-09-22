@@ -1,0 +1,91 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --verydarkblueMainBG: hsl(233, 47%, 7%);
+  --darkdesaturatedblueCardBG: hsl(244, 38%, 16%);
+  --softvioletAccent: hsl(277, 64%, 61%);
+
+  /* ### Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --slightlytransparentwhiteMainParagraph: hsla(0, 0%, 100%, 0.75);
+  --slightlytransparentwhiteStatHeading: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--verydarkblueMainBG);
+  font-family: 'Inter', sans-serif;
+  margin: 7rem;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 90%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkdesaturatedblueCardBG);
+
+  min-width: 100%;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.content {
+  padding: 4rem;
+}
+
+.content h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.content h1 span {
+  color: var(--softvioletAccent);
+}
+
+.text {
+  color: var(--slightlytransparentwhiteStatHeading);
+  margin-bottom: 1rem;
+}
+
+.stats {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.stats h2 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.stats p {
+  color: var(--slightlytransparentwhiteStatHeading);
+  font-size: 13px;
+}
+
+.image {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
